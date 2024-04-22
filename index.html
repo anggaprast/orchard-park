@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <title>Orchard Park</title>
+    <link href="src/output.css" rel="stylesheet">
+</head>
+
+<body class="scroll-smooth">
+    <!--Navbar Section-->
+    <header
+        class="w-full fixed items-center font-plusjs z-10 marker:bg-opacity-80 backdrop-blur-md border-[1px] border-slate-50">
+        <div class="container mx-auto py-4">
+            <div class="flex w-full justify-between items-center mx-auto relative">
+                <div class="md:w-1/3 lg:w-1/4 px-6 lg:px-10 xl:px-12">
+                    <h2 class="flex w-1/2 text-base md:text-xl lg:text-2xl font-black tracking-tighter items-center">
+                        OrchardPark
+                    </h2>
+                </div>
+                <nav id="nav-menu"
+                    class="hidden absolute md:block md:relative top-full right-8 md:right-0 border-2 bg-white border-slate-100 shadow-md p-4 rounded-md md:bg-transparent md:shadow-none md:border-0">
+                    <ul
+                        class="block md:flex md:gap-6 lg:gap-12 xl:gap-16 text-sm font-bold justify-evenly items-center">
+                        <li class="group mb-1 md:mb-0"><a href="#home" class="hover:text-blue-600">Home</a></li>
+                        <li class="group mb-1 md:mb-0"><a href="#properties" class="hover:text-blue-600">Properties</a>
+                        </li>
+                        <li class="group mb-1 md:mb-0"><a href="#"
+                                class="hover:text-blue-600 flex items-center">Buy<span class="hidden md:block pl-1"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="4" d="M36 18L24 30L12 18" />
+                                    </svg></span></a></li>
+                        <li class="group mb-1 md:mb-0"><a href="#"
+                                class="hover:text-blue-600 flex items-center">Sell<span
+                                    class="hidden md:block pl-1"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 48 48">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="4" d="M36 18L24 30L12 18" />
+                                    </svg></span></a></li>
+                        <li class="group mb-1 md:mb-0"><a href="#"
+                                class="hover:text-blue-600 flex items-center">Rent<span
+                                    class="hidden md:block pl-1"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                        height="1em" viewBox="0 0 48 48">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="4" d="M36 18L24 30L12 18" />
+                                    </svg></span></a></li>
+                        <div class="flex flex-col gap-1 mt-2 md:hidden">
+                            <button
+                                class="text-xs font-semibold rounded-full border-black border-2 p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition ease-in-out hover:shadow-xl">Login</button>
+                            <button
+                                class="text-xs font-semibold p-1 bg-blue-600 text-white rounded-full border-2 border-blue-600 hover:shadow-md">Sign
+                                Up</button>
+                        </div>
+                    </ul>
+                </nav>
+                <div class="md:w-1/3 lg:w-1/4 px-6 lg:px-10 xl:px-12">
+                    <div class="hidden md:flex w-full gap-4 items-centers justify-end lg:gap-6">
+                        <button class="text-sm font-bold hover:text-blue-600">Login</button>
+                        <button
+                            class="text-xs lg:text-sm font-bold px-3 py-2 lg:px-6 lg:py-3 bg-blue-600 text-white rounded-full border-blue-600 border-2 shadow-md transition ease-in-out hover:shadow-lg">Sign
+                            Up</button>
+                    </div>
+                </div>
+                <div class="px-6 md:hidden flex text-2xl items-center justify-end relative">
+                    <button id="menu" name="menu" type="button" class="block absolute">
+                        <span class="line origin-top-left transition ease-in-out"></span>
+                        <span class="line transition ease-in-out"></span>
+                        <span class="line origin-bottom-left transition ease-in-out"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End of Navbar-->
+    <!-- Hero Section -->
+    <section class="pt-20 sm:pt-24 md:pt-32 lg:pt-36" id="home">
+        <div class="container mx-auto px-6 lg:px-12 xl:px-16 font-plusjs">
+            <div
+                class="flex text-xs py-1 mx-auto text-center rounded-full border-slate-200 border-2 max-w-72 md:max-w-80">
+                <button
+                    class="font-normal ml-1 px-3 py-1 bg-blue-600 text-white rounded-full shadow-sm transition ease-in-out hover:shadow-md">New</button>
+                <h1 class="md:text-sm px-3 py-1 text-slate-600">We've just released a new
+                    feature</h1>
+            </div>
+            <h1
+                class="text-4xl font-semibold lg:font-medium text-center tracking-tighter mt-5 lg:text-8xl md:text-6xl sm:text-5xl">
+                Trusted Real Estate Property Just For You
+            </h1>
+            <h5 class="text-center text-slate-400 mt-6 lg:mt-10 lg:px-28 xl:px-36">We prioritize your peace of mind
+                throughout the
+                entire
+                home-buying process. With unwaveringccommitment,
+                we bring you more than just properties - we deliver trusted spaces that
+                resonate with your lifestyle.</h5>
+            <div class="flex justify-center mx-auto gap-4 mt-9">
+                <button
+                    class="text-xs  font-semibold px-6 py-3 bg-blue-600 text-white rounded-full shadow-md transition ease-in-out hover:shadow-xl hover:scale-105 hover:-translate-y-1">View
+                    Pricing</button>
+                <button
+                    class="text-xs font-semibold rounded-full border-black border-2 px-6 py-3 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition ease-in-out hover:shadow-xl hover:scale-105 hover:-translate-y-1">Get
+                    More Info</button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Hero Section-->
+    <section class="container mx-auto px-6 py-4 lg:py-8 lg:px-12 font-plusj">
+        <div class="flex justify-center gap-3 md:mx-2">
+            <img class="hidden md:flex md:w-2/12 md:object-cover md:rounded-3xl"
+                src="https://source.unsplash.com/brown-and-black-concrete-building-JvQ0Q5IkeMM" alt="Image">
+            <img class="hidden md:object-cover md:flex md:w-4/12 md:rounded-3xl"
+                src="https://source.unsplash.com/black-and-white-concrete-building-0tKCSyLXqQM" alt="Image">
+            <img class="md:flex md:w-6/12 md:rounded-3xl object-cover rounded-2xl"
+                src="https://source.unsplash.com/brown-and-white-wooden-house-near-green-trees-during-daytime-2gDwlIim3Uw"
+                alt="Image">
+        </div>
+        <h1 class="mt-6 md:mt-10 text-center tracking-tighter font-semibold text-2xl md:text-3xl lg:text-5xl">
+            We Buy, Sell, Rent Properties</h1>
+        <h3 class="md:mt-2 lg:mt-4 text-center text-slate-500 text-sm md:text-base">Let us be your go-to partner
+            for all your real estate endeavors</h3>
+    </section>
+    <!-- Next Section-->
+    <section class="container mx-auto px-6 py-4 lg:py-8 lg:px-12 font-plusj">
+        <div class="sm:grid sm:grid-cols-3 sm:gap-3">
+            <div
+                class="flex flex-col bg-slate-50 rounded-2xl p-4 lg:p-6 border-2 border-slate-200 shadow-sm mb-3 sm:mb-0">
+                <span class="text-5xl mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round"
+                                d="M22 22H2m0-11l8.126-6.5a3 3 0 0 1 3.748 0L22 11m-6.5-5.5v-2A.5.5 0 0 1 16 3h2.5a.5.5 0 0 1 .5.5v5M4 22V9.5M20 22V9.5" />
+                            <path
+                                d="M15 22v-5c0-1.414 0-2.121-.44-2.56C14.122 14 13.415 14 12 14c-1.414 0-2.121 0-2.56.44C9 14.878 9 15.585 9 17v5m5-12.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z" />
+                        </g>
+                    </svg></span>
+                <h3 class="font-semibold text-lg lg:text-3xl">Buy Properties</h3>
+                <p class="text-sm lg:text-lg text-slate-500 mt-2 h-full">We curate a selection that suits
+                    various
+                    lifestyles.
+                    Our
+                    expert team ensures a smooth buying process.</p>
+                <a href="#"
+                    class="w-fit text-sm font-medium mt-2 lg:mt-12 lg:text-base transition ease-in-out hover:scale-105 hover:translate-x-1 hover:font-bold">Learn
+                    More</a>
+            </div>
+            <div
+                class="flex flex-col bg-slate-50 rounded-2xl p-4 lg:p-6 border-2 border-slate-200 shadow-sm mb-3 sm:mb-0">
+                <span class="text-5xl mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M12 2.75a9.25 9.25 0 1 0 0 18.5a9.25 9.25 0 0 0 0-18.5M1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 
+                                        12S17.937 22.75 12 22.75S1.25 17.937 1.25 12M12 5.25a.75.75 0 0 1 .75.75v.317c1.63.292 3 1.517 3 3.183a.75.75 0 0 1-1.5 
+                                        0c0-.678-.564-1.397-1.5-1.653v3.47c1.63.292 3 1.517 3 3.183s-1.37 2.891-3 3.183V18a.75.75 0 0 1-1.5 0v-.317c-1.63-.292-3-1.517-3-3.183a.75.75 
+                                        0 0 1 1.5 0c0 .678.564 1.397 1.5 1.652v-3.469c-1.63-.292-3-1.517-3-3.183s1.37-2.891 3-3.183V6a.75.75 0 0 1 .75-.75m-.75 
+                                        2.597c-.936.256-1.5.975-1.5 1.653s.564 1.397 1.5 1.652zm1.5 5v3.306c.936-.256 1.5-.974 1.5-1.653c0-.678-.564-1.397-1.5-1.652"
+                            clip-rule="evenodd" /></svg>
+                </span>
+                <h3 class="font-semibold text-lg lg:text-3xl">Sell Properties</h3>
+                <p class="text-sm lg:text-lg text-slate-500 mt-2 h-full">Trust us to handle the intricacies of
+                    negotiations,
+                    paperwork, and a successful closing.</p>
+                <a href="#"
+                    class="w-fit text-sm font-medium mt-2 lg:mt-12 lg:text-base transition ease-in-out hover:scale-105 hover:translate-x-1 hover:font-bold">Learn
+                    More</a>
+            </div>
+            <div
+                class="flex flex-col bg-slate-50 rounded-2xl p-4 lg:p-6 border-2 border-slate-200 shadow-sm mb-3 sm:mb-0">
+
+                <span class="text-5xl mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10" />
+                            <path fill="currentColor"
+                                d="M15.5 16a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m-7-7a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1" />
+                            <path d="m16 8l-8 8" />
+                        </g>
+                    </svg></span>
+                <h3 class="font-semibold text-lg lg:text-3xl">Rent Properties</h3>
+                <p class="text-sm lg:text-lg text-slate-500 mt-2 h-full">We connect tenants with landlords,
+                    streamlining the
+                    rental
+                    process for a hassle-free experience on both ends.</p>
+                <a href="#"
+                    class="w-fit text-sm font-medium mt-2 lg:mt-12 lg:text-base transition ease-in-out hover:scale-105 hover:translate-x-1 hover:font-bold">Learn
+                    More</a>
+            </div>
+        </div>
+    </section>
+    <!--Properties Section-->
+    <section id="properties">
+        <div class="container mx-auto mt-4 md:mt-12 px-6 md:px-12 font-plusjs">
+            <h1 class="text-center tracking-tighter font-semibold text-2xl md:text-3xl lg:text-5xl">
+                We Help You to Make Better Deals</h1>
+            <h3 class="sm:mt-2 md:mt-4 text-center text-slate-500 text-sm md:text-base">Rely on our seasoned
+                professionals who posses in-depth knowledge of the real estate landscape</h3>
+            <div
+                class="grid grid-cols-4 gap-2 items-center text-center mt-8 md:mt-12 font-plusjs text-sm md:text-base font-semibold">
+                <div class="py-2 text-slate-500 border-b-2 md:border-b-4">
+                    <a href="#properties" class="hover:text-blue-700">Recently
+                        Added</a>
+                </div>
+                <div class="py-2 text-blue-700 border-blue-700 border-b-2 md:border-b-4">
+                    <a href="#properties">Modern Property</a>
+                </div>
+                <div class="py-2 text-slate-500 border-b-2 md:border-b-4">
+                    <a href="#properties" class=" hover:text-blue-700">Heritage Property</a>
+                </div>
+                <div class="h-full py-2 text-slate-500 break-words border-b-2 md:border-b-4">
+                    <a href="#properties" class="hover:text-blue-700">Apartements</a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-4 lg:my-12 px-2 md:px-3 lg:px-12 font-plusjs">
+            <div class="bg-slate-50 rounded-2xl border-2 p-2 border-slate-100">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-3">
+                    <!--##### CARD #####-->
+                    <div
+                        class="flex flex-col justify-between p-1 lg:p-2 bg-white rounded-lg shadow-md transition ease-in-out hover:scale-105">
+                        <div class="relative h-40 lg:h-56 overflow-hidden rounded-lg">
+                            <img src="https://source.unsplash.com/3d-render-of-building-exterior-L5nd7rPrEic" alt=""
+                                class="h-full w-full absolute object-cover">
+                        </div>
+                        <div class="mt-2 px-1 lg:px-2 flex justify-between items-center">
+                            <h5
+                                class="flex items-center gap-[2px] text-[8px] sm:text-xs lg:text-sm px-1 bg-blue-50 rounded-full text-blue-700">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z" />
+                                    </svg></span>House
+                            </h5>
+                            <h5 class="text-[8px] sm:text-[10px] md:text-xs">⭐⭐⭐⭐⭐4.8</h5>
+                        </div>
+                        <div
+                            class="mt-2 px-1 lg:px-2 flex flex-col sm:flex-row justify-between text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold">
+                            <h1>Grand Galaxy</h1>
+                            <h1>$900,000</h1>
+                        </div>
+                        <h1 class="mt-1 px-1 lg:px-2 text-[10px] sm:text-xs lg:text-sm xl:text-base">Grand Galaxy Park
+                            Jl. Boulevard Raya
+                        </h1>
+
+                        <div
+                            class="px-1 lg:px-2 flex gap-[2px] lg:gap-1 text-[7px] sm:text-[9px] lg:text-xs md:py-1 my-1 lg:mt-3">
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <h5 class="flex px-1 py-[2px] rounded-full bg-slate-200 items-center">2+</h5>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col justify-between p-1 lg:p-2 bg-white rounded-lg shadow-md transition ease-in-out hover:scale-105">
+                        <div class="relative h-40 lg:h-56 overflow-hidden rounded-lg">
+                            <img src="https://source.unsplash.com/white-and-brown-wooden-house-under-blue-sky-during-daytime-EMPLSuvDuhQ"
+                                alt="" class="h-full w-full absolute object-cover">
+                        </div>
+                        <div class="mt-2 px-1 lg:px-2 flex justify-between items-center">
+                            <h5
+                                class="flex items-center gap-[2px] text-[8px] sm:text-xs lg:text-sm px-1 bg-blue-50 rounded-full text-blue-700">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M7 16a1 1 0 1 0 0-2a1 1 0 0 0 0 2m1 2a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-1-5a1 1 0 1 0 0-2a1 1 0 0 0 0 2m1-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0M7 7a1 1 0 1 0 0-2a1 1 0 0 0 0 2m7-2.75V5h4.75A2.25 2.25 0 0 1 21 7.25v13.5a.75.75 0 0 1-.75.75h-3v-2.75a.5.5 0 0 0-.5-.5h-2.5a.5.5 0 0 0-.5.5v2.75h-10a.75.75 0 0 1-.75-.75V4.25A2.25 2.25 0 0 1 5.25 2h6.5A2.25 2.25 0 0 1 14 4.25M5.25 3.5a.75.75 0 0 0-.75.75V20H10V7.25A2.25 2.25 0 0 1 12.25 5h.25v-.75a.75.75 0 0 0-.75-.75zM18 15a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+                                    </svg></span>Building
+                            </h5>
+                            <h5 class="text-[8px] sm:text-[10px] md:text-xs">⭐⭐⭐⭐⭐4.8</h5>
+                        </div>
+                        <div
+                            class="mt-2 px-1 lg:px-2 flex flex-col sm:flex-row justify-between text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold">
+                            <h1>Gulon Asri House</h1>
+                            <h1>$500,000</h1>
+                        </div>
+                        <h1 class="mt-1 px-1 lg:px-2 text-[10px] sm:text-xs lg:text-sm xl:text-base">326 Kenangan Avenue
+                            Blv, Kalimalang
+                        </h1>
+
+                        <div
+                            class="px-1 lg:px-2 flex gap-[2px] lg:gap-1 text-[7px] sm:text-[9px] lg:text-xs md:py-1 my-1 lg:mt-3">
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <h5 class="flex px-1 py-[2px] rounded-full bg-slate-200 items-center">2+</h5>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col justify-between p-1 lg:p-2 bg-white rounded-lg shadow-md transition ease-in-out hover:scale-105">
+                        <div class="relative h-40 lg:h-56 overflow-hidden rounded-lg">
+                            <img src="https://source.unsplash.com/white-and-brown-concrete-building-under-blue-sky-during-daytime-_TPTXZd9mOo"
+                                alt="" class="h-full w-full absolute object-cover">
+                        </div>
+                        <div class="mt-2 px-1 lg:px-2 flex justify-between items-center">
+                            <h5
+                                class="flex items-center gap-[2px] text-[8px] sm:text-xs lg:text-sm px-1 bg-blue-50 rounded-full text-blue-700">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M7 16a1 1 0 1 0 0-2a1 1 0 0 0 0 2m1 2a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-1-5a1 1 0 1 0 0-2a1 1 0 0 0 0 2m1-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0M7 7a1 1 0 1 0 0-2a1 1 0 0 0 0 2m7-2.75V5h4.75A2.25 2.25 0 0 1 21 7.25v13.5a.75.75 0 0 1-.75.75h-3v-2.75a.5.5 0 0 0-.5-.5h-2.5a.5.5 0 0 0-.5.5v2.75h-10a.75.75 0 0 1-.75-.75V4.25A2.25 2.25 0 0 1 5.25 2h6.5A2.25 2.25 0 0 1 14 4.25M5.25 3.5a.75.75 0 0 0-.75.75V20H10V7.25A2.25 2.25 0 0 1 12.25 5h.25v-.75a.75.75 0 0 0-.75-.75zM18 15a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+                                    </svg></span>Residence
+                            </h5>
+                            <h5 class="text-[8px] sm:text-[10px] md:text-xs">⭐⭐⭐⭐⭐4.8</h5>
+                        </div>
+                        <div
+                            class="mt-2 px-1 lg:px-2 flex flex-col sm:flex-row justify-between text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold">
+                            <h1>D'green SOC</h1>
+                            <h1>$650,000</h1>
+                        </div>
+                        <h1 class="mt-1 px-1 lg:px-2 text-[10px] sm:text-xs lg:text-sm xl:text-base">326 Kenangan Avenue
+                            Blv, Kalimalang
+                        </h1>
+
+                        <div
+                            class="px-1 lg:px-2 flex gap-[2px] lg:gap-1 text-[7px] sm:text-[9px] lg:text-xs md:py-1 my-1 lg:mt-3">
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <h5 class="flex px-1 py-[2px] rounded-full bg-slate-200 items-center">2+</h5>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col justify-between p-1 lg:p-2 bg-white rounded-lg shadow-md transition ease-in-out hover:scale-105">
+                        <div class="relative h-40 lg:h-56 overflow-hidden rounded-lg">
+                            <img src="https://source.unsplash.com/3d-render-modern-building-exterior-2MA8dFvOMec" alt=""
+                                class="h-full w-full absolute object-cover">
+                        </div>
+                        <div class="mt-2 px-1 lg:px-2 flex justify-between items-center">
+                            <h5
+                                class="flex items-center gap-[2px] text-[8px] sm:text-xs lg:text-sm px-1 bg-blue-50 rounded-full text-blue-700">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M7 16a1 1 0 1 0 0-2a1 1 0 0 0 0 2m1 2a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-1-5a1 1 0 1 0 0-2a1 1 0 0 0 0 2m1-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0M7 7a1 1 0 1 0 0-2a1 1 0 0 0 0 2m7-2.75V5h4.75A2.25 2.25 0 0 1 21 7.25v13.5a.75.75 0 0 1-.75.75h-3v-2.75a.5.5 0 0 0-.5-.5h-2.5a.5.5 0 0 0-.5.5v2.75h-10a.75.75 0 0 1-.75-.75V4.25A2.25 2.25 0 0 1 5.25 2h6.5A2.25 2.25 0 0 1 14 4.25M5.25 3.5a.75.75 0 0 0-.75.75V20H10V7.25A2.25 2.25 0 0 1 12.25 5h.25v-.75a.75.75 0 0 0-.75-.75zM18 15a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+                                    </svg></span>Appartement
+                            </h5>
+                            <h5 class="text-[8px] sm:text-[10px] md:text-xs">⭐⭐⭐⭐⭐4.8</h5>
+                        </div>
+                        <div
+                            class="mt-2 px-1 lg:px-2 flex flex-col sm:flex-row justify-between text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold">
+                            <h1>Oslo Urbana</h1>
+                            <h1>$1,200,000</h1>
+                        </div>
+                        <h1 class="mt-1 px-1 lg:px-2 text-[10px] sm:text-xs lg:text-sm xl:text-base">Grand Galaxy Park
+                            Jl. Boulevard Raya
+                        </h1>
+
+                        <div
+                            class="px-1 lg:px-2 flex gap-[2px] lg:gap-1 text-[7px] sm:text-[9px] lg:text-xs md:py-1 my-1 lg:mt-3">
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <h5 class="flex px-1 py-[2px] rounded-full bg-slate-200 items-center">2+</h5>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col justify-between p-1 lg:p-2 bg-white rounded-lg shadow-md transition ease-in-out hover:scale-105">
+                        <div class="relative h-40 lg:h-56 overflow-hidden rounded-lg">
+                            <img src="https://source.unsplash.com/blue-and-white-concrete-building-08uIUe2a9XY" alt=""
+                                class="h-full w-full absolute object-cover">
+                        </div>
+                        <div class="mt-2 px-1 lg:px-2 flex justify-between items-center">
+                            <h5
+                                class="flex items-center gap-[2px] text-[8px] sm:text-xs lg:text-sm px-1 bg-blue-50 rounded-full text-blue-700">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M7 16a1 1 0 1 0 0-2a1 1 0 0 0 0 2m1 2a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-1-5a1 1 0 1 0 0-2a1 1 0 0 0 0 2m1-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0M7 7a1 1 0 1 0 0-2a1 1 0 0 0 0 2m7-2.75V5h4.75A2.25 2.25 0 0 1 21 7.25v13.5a.75.75 0 0 1-.75.75h-3v-2.75a.5.5 0 0 0-.5-.5h-2.5a.5.5 0 0 0-.5.5v2.75h-10a.75.75 0 0 1-.75-.75V4.25A2.25 2.25 0 0 1 5.25 2h6.5A2.25 2.25 0 0 1 14 4.25M5.25 3.5a.75.75 0 0 0-.75.75V20H10V7.25A2.25 2.25 0 0 1 12.25 5h.25v-.75a.75.75 0 0 0-.75-.75zM18 15a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2m4-4a1 1 0 1 0-2 0a1 1 0 0 0 2 0m-4 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+                                    </svg></span>Residence
+                            </h5>
+                            <h5 class="text-[8px] sm:text-[10px] md:text-xs">⭐⭐⭐⭐⭐4.8</h5>
+                        </div>
+                        <div
+                            class="mt-2 px-1 lg:px-2 flex flex-col sm:flex-row justify-between text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold">
+                            <h1>Sasana Residence</h1>
+                            <h1>$950,000</h1>
+                        </div>
+                        <h1 class="mt-1 px-1 lg:px-2 text-[10px] sm:text-xs lg:text-sm xl:text-base">326 Kenangan Avenue
+                            Blv, Kalimalang
+                        </h1>
+
+                        <div
+                            class="px-1 lg:px-2 flex gap-[2px] lg:gap-1 text-[7px] sm:text-[9px] lg:text-xs md:py-1 my-1 lg:mt-3">
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <h5 class="flex px-1 py-[2px] rounded-full bg-slate-200 items-center">2+</h5>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col justify-between p-1 lg:p-2 bg-white rounded-lg shadow-md transition ease-in-out hover:scale-105">
+                        <div class="relative h-40 lg:h-56 overflow-hidden rounded-lg">
+                            <img src="https://source.unsplash.com/brown-and-white-concrete-building-MAnVoJlQUvg" alt=""
+                                class="h-full w-full absolute object-cover">
+                        </div>
+                        <div class="mt-2 px-1 lg:px-2 flex justify-between items-center">
+                            <h5
+                                class="flex items-center gap-[2px] text-[8px] sm:text-xs lg:text-sm px-1 bg-blue-50 rounded-full text-blue-700">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z" />
+                                    </svg></span>House
+                            </h5>
+                            <h5 class="text-[8px] sm:text-[10px] md:text-xs">⭐⭐⭐⭐⭐4.8</h5>
+                        </div>
+                        <div
+                            class="mt-2 px-1 lg:px-2 flex flex-col sm:flex-row justify-between text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold">
+                            <h1>Aryo Putro House</h1>
+                            <h1>$600,000</h1>
+                        </div>
+                        <h1 class="mt-1 px-1 lg:px-2 text-[10px] sm:text-xs lg:text-sm xl:text-base">Grand Galaxy Park
+                            Jl. Boulevard Raya
+                        </h1>
+
+                        <div
+                            class="px-1 lg:px-2 flex gap-[2px] lg:gap-1 text-[7px] sm:text-[9px] lg:text-xs md:py-1 my-1 lg:mt-3">
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <div
+                                class="flex gap-[0px] sm:gap-[2px] px-1 lg:px-2 py-[2px] lg:py-1 items-center rounded-full bg-slate-200">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M2 19v-9h1V5h18v5h1v9h-2v-2H4v2zm11-9h6V7h-6zm-8 0h6V7H5z" />
+                                    </svg></span>
+                                <h5>3 Beds</h5>
+                            </div>
+                            <h5 class="flex px-1 py-[2px] rounded-full bg-slate-200 items-center">2+</h5>
+                        </div>
+                    </div>
+                    <!--##### CARD #####-->
+                </div>
+                <div class="flex justify-center mx-auto my-4">
+                    <button
+                        class="text-xs font-semibold px-6 py-3 bg-blue-600 text-white rounded-full shadow-md transition ease-in-out hover:shadow-xl hover:scale-105 hover:-translate-y-1">Load
+                        More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Section -->
+    <!-- Why Choose Us Section -->
+    <section class="container mx-auto mt-6 lg:mt-10 px-6 lg:px-12 font-plusjs">
+        <h1 class="mt-4 text-center tracking-tighter font-semibold text-2xl md:text-3xl lg:text-5xl">
+            Why Choose Us?</h1>
+        <h3 class="md:mt-4 text-center text-slate-500 text-sm md:text-base mt-2 mb-5 sm:mb-8">Your
+            satisfaction is our priority, and we look forward to being the key to unlocking your real estate success.
+        </h3>
+        <div class="md:flex md:gap-4 font-plusjs">
+            <div
+                class="md:flex md:flex-col justify-between md:w-2/3 bg-slate-50 border-slate-200 border-2 rounded-xl p-2 lg:p-4 mb-2 md:mb-0">
+                <div class="flex gap-2 sm:gap-4">
+                    <div class="bg-white p-2 rounded-md drop-shadow-md text-blue-500 shrink-0 h-fit text-lg md:text-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M20.8 13a2 2 0 0 0-1.8-1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1-1.8-1m2.8-8v10M3 5a2 2 0 1 0 4 0a2 2 0 1 0-4 0m12 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0M7 5h8M7 5v8a3 3 0 0 0 3 3h1" />
+                        </svg>
+                    </div>
+                    <div class="flex-col">
+                        <h2 class="sm:text-lg md:text-xl lg:text-2xl font-semibold mb-1">Transparent Transaction
+                            Process</h2>
+                        <h3 class="text-sm text-slate-500 mb-4">We kick off our partnership with open and honest
+                            communication.</h3>
+                    </div>
+                </div>
+                <div class=" flex flex-col gap-2 sm:gap-3">
+                    <div class="flex p-2 bg-white rounded-lg shadow-sm">
+                        <div class="w-1 bg-blue-600 mr-1 sm:mr-3 rounded-full"></div>
+                        <div class="flex-1 py-2">
+                            <h2 class="font-medium">Clear Pricing and Fee Structure</h2>
+                            <h3 class="text-sm text-slate-400">Customize your subscription</h3>
+                        </div>
+                        <div class="grid grid-cols-1 content-center text-2xl sm:w-10">
+                            <a href="#"><svg
+                                    class="align-middle transition ease-in-out hover:text-blue-700 hover:rotate-90"
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path
+                                            d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                        <path fill="currentColor"
+                                            d="M15.707 11.293a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 1 1-1.414-1.414l4.95-4.95l-4.95-4.95a1 1 0 0 1 1.414-1.414z" />
+                                    </g>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="flex p-2 bg-white rounded-lg shadow-sm">
+                        <div class="w-1 bg-blue-600 mr-1 sm:mr-3 rounded-full"></div>
+                        <div class="flex-1 py-2">
+                            <h2 class="font-medium">Document Transparency and Verification</h2>
+                            <h3 class="text-sm text-slate-400">Saving and added value with our subscription
+                                plans
+                            </h3>
+                        </div>
+                        <div class="grid grid-cols-1 content-center text-2xl sm:w-10">
+                            <a href="#"><svg
+                                    class="align-middle transition ease-in-out hover:text-blue-700 hover:rotate-90"
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path
+                                            d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                        <path fill="currentColor"
+                                            d="M15.707 11.293a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 1 1-1.414-1.414l4.95-4.95l-4.95-4.95a1 1 0 0 1 1.414-1.414z" />
+                                    </g>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="flex p-2 bg-white rounded-lg shadow-sm">
+                        <div class="w-1 bg-blue-600 mr-1 sm:mr-3 rounded-full"></div>
+                        <div class="flex-1 py-2">
+                            <h2 class="font-medium">Real Time Transaction Updates</h2>
+                            <h3 class="text-sm text-slate-400">Subscribers are our prioritie, gain early access
+                            </h3>
+                        </div>
+                        <div class="grid grid-cols-1 content-center text-2xl sm:w-10">
+                            <a href="#"><svg
+                                    class="align-middle transition ease-in-out hover:text-blue-700 hover:rotate-90"
+                                    xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path
+                                            d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                        <path fill="currentColor"
+                                            d="M15.707 11.293a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 1 1-1.414-1.414l4.95-4.95l-4.95-4.95a1 1 0 0 1 1.414-1.414z" />
+                                    </g>
+                                </svg></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="md:flex-auto md:w-1/3 bg-slate-50 border-slate-200 border-2 rounded-xl p-2 lg:p-4 mb-0 md:mb-0">
+                <div class="flex gap-2 sm:gap-4">
+                    <div class="bg-white p-2 rounded-md drop-shadow-md text-blue-500 shrink-0 h-fit text-lg md:text-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 14 14">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M7 11.5v2m2.5-3v2m-5-2v2m8-12h-11a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1" />
+                                <path
+                                    d="M7 6.25a1.75 1.75 0 1 0 0-3.5a1.75 1.75 0 0 0 0 3.5m-4.225-1.5a.25.25 0 0 1 0-.5m0 .5a.25.25 0 0 0 0-.5m8.45.5a.25.25 0 1 1 0-.5m0 .5a.25.25 0 1 0 0-.5" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="flex-row">
+                        <h2 class="sm:text-lg md:text-xl lg:text-2xl font-semibold mb-1">Easy Payment</h2>
+                        <h3 class="text-sm text-slate-500 mb-4 lg:mb-8 h-full">Our commitment to
+                            providing an
+                            easy payment
+                            process
+                            ensures that you can navigate
+                            the financial aspects of your real estate transactions effortlessly.
+                        </h3>
+                    </div>
+                </div>
+                <div class="flex flex-auto gap-2 mt-4 mb-2">
+                    <span class="flex justify-center bg-white w-3/5 p-2 lg:py-4 text-5xl rounded-lg drop-shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.29em" height="1em" viewBox="0 0 256 199">
+                            <path
+                                d="M46.54 198.011V184.84c0-5.05-3.074-8.342-8.343-8.342c-2.634 0-5.488.878-7.464 3.732c-1.536-2.415-3.731-3.732-7.024-3.732c-2.196 0-4.39.658-6.147 3.073v-2.634h-4.61v21.074h4.61v-11.635c0-3.731 1.976-5.488 5.05-5.488c3.072 0 4.61 1.976 4.61 5.488v11.635h4.61v-11.635c0-3.731 2.194-5.488 5.048-5.488c3.074 0 4.61 1.976 4.61 5.488v11.635zm68.271-21.074h-7.463v-6.366h-4.61v6.366h-4.171v4.17h4.17v9.66c0 4.83 1.976 7.683 7.245 7.683c1.976 0 4.17-.658 5.708-1.536l-1.318-3.952c-1.317.878-2.853 1.098-3.951 1.098c-2.195 0-3.073-1.317-3.073-3.513v-9.44h7.463zm39.076-.44c-2.634 0-4.39 1.318-5.488 3.074v-2.634h-4.61v21.074h4.61v-11.854c0-3.512 1.536-5.488 4.39-5.488c.878 0 1.976.22 2.854.439l1.317-4.39c-.878-.22-2.195-.22-3.073-.22m-59.052 2.196c-2.196-1.537-5.269-2.195-8.562-2.195c-5.268 0-8.78 2.634-8.78 6.805c0 3.513 2.634 5.488 7.244 6.147l2.195.22c2.415.438 3.732 1.097 3.732 2.195c0 1.536-1.756 2.634-4.83 2.634c-3.073 0-5.488-1.098-7.025-2.195l-2.195 3.512c2.415 1.756 5.708 2.634 9 2.634c6.147 0 9.66-2.853 9.66-6.805c0-3.732-2.854-5.708-7.245-6.366l-2.195-.22c-1.976-.22-3.512-.658-3.512-1.975c0-1.537 1.536-2.415 3.951-2.415c2.635 0 5.269 1.097 6.586 1.756zm122.495-2.195c-2.635 0-4.391 1.317-5.489 3.073v-2.634h-4.61v21.074h4.61v-11.854c0-3.512 1.537-5.488 4.39-5.488c.879 0 1.977.22 2.855.439l1.317-4.39c-.878-.22-2.195-.22-3.073-.22m-58.833 10.976c0 6.366 4.39 10.976 11.196 10.976c3.073 0 5.268-.658 7.463-2.414l-2.195-3.732c-1.756 1.317-3.512 1.975-5.488 1.975c-3.732 0-6.366-2.634-6.366-6.805c0-3.951 2.634-6.586 6.366-6.805c1.976 0 3.732.658 5.488 1.976l2.195-3.732c-2.195-1.757-4.39-2.415-7.463-2.415c-6.806 0-11.196 4.61-11.196 10.976m42.588 0v-10.537h-4.61v2.634c-1.537-1.975-3.732-3.073-6.586-3.073c-5.927 0-10.537 4.61-10.537 10.976c0 6.366 4.61 10.976 10.537 10.976c3.073 0 5.269-1.097 6.586-3.073v2.634h4.61zm-16.904 0c0-3.732 2.415-6.805 6.366-6.805c3.732 0 6.367 2.854 6.367 6.805c0 3.732-2.635 6.805-6.367 6.805c-3.951-.22-6.366-3.073-6.366-6.805m-55.1-10.976c-6.147 0-10.538 4.39-10.538 10.976c0 6.586 4.39 10.976 10.757 10.976c3.073 0 6.147-.878 8.562-2.853l-2.196-3.293c-1.756 1.317-3.951 2.195-6.146 2.195c-2.854 0-5.708-1.317-6.367-5.05h15.587v-1.755c.22-6.806-3.732-11.196-9.66-11.196m0 3.951c2.853 0 4.83 1.757 5.268 5.05h-10.976c.439-2.854 2.415-5.05 5.708-5.05m114.372 7.025v-18.879h-4.61v10.976c-1.537-1.975-3.732-3.073-6.586-3.073c-5.927 0-10.537 4.61-10.537 10.976c0 6.366 4.61 10.976 10.537 10.976c3.074 0 5.269-1.097 6.586-3.073v2.634h4.61zm-16.903 0c0-3.732 2.414-6.805 6.366-6.805c3.732 0 6.366 2.854 6.366 6.805c0 3.732-2.634 6.805-6.366 6.805c-3.952-.22-6.366-3.073-6.366-6.805m-154.107 0v-10.537h-4.61v2.634c-1.537-1.975-3.732-3.073-6.586-3.073c-5.927 0-10.537 4.61-10.537 10.976c0 6.366 4.61 10.976 10.537 10.976c3.074 0 5.269-1.097 6.586-3.073v2.634h4.61zm-17.123 0c0-3.732 2.415-6.805 6.366-6.805c3.732 0 6.367 2.854 6.367 6.805c0 3.732-2.635 6.805-6.367 6.805c-3.951-.22-6.366-3.073-6.366-6.805" />
+                            <path fill="#ff5f00" d="M93.298 16.903h69.15v124.251h-69.15z" />
+                            <path fill="#eb001b"
+                                d="M97.689 79.029c0-25.245 11.854-47.637 30.074-62.126C114.373 6.366 97.47 0 79.03 0C35.343 0 0 35.343 0 79.029c0 43.685 35.343 79.029 79.029 79.029c18.44 0 35.343-6.366 48.734-16.904c-18.22-14.269-30.074-36.88-30.074-62.125" />
+                            <path fill="#f79e1b"
+                                d="M255.746 79.029c0 43.685-35.343 79.029-79.029 79.029c-18.44 0-35.343-6.366-48.734-16.904c18.44-14.488 30.075-36.88 30.075-62.125c0-25.245-11.855-47.637-30.075-62.126C141.373 6.366 158.277 0 176.717 0c43.686 0 79.03 35.563 79.03 79.029" />
+                        </svg>
+                    </span>
+                    <span
+                        class="flex justify-center bg-white w-2/5 p-2 lg:py-4 text-5xl rounded-lg text-center drop-shadow-md">
+                        <svg xmlns=" http://www.w3.org/2000/svg" width="1.3em" height="1em" viewBox="0 0 256 198">
+                            <defs>
+                                <linearGradient id="logosJcb0" x1="-57.527%" x2="232.391%" y1="50.124%" y2="50.124%">
+                                    <stop offset="0%" stop-color="#007940" />
+                                    <stop offset="22.85%" stop-color="#00873f" />
+                                    <stop offset="74.33%" stop-color="#40a737" />
+                                    <stop offset="100%" stop-color="#5cb531" />
+                                </linearGradient>
+                                <linearGradient id="logosJcb1" x1=".183%" x2="100.273%" y1="49.96%" y2="49.96%">
+                                    <stop offset="0%" stop-color="#007940" />
+                                    <stop offset="22.85%" stop-color="#00873f" />
+                                    <stop offset="74.33%" stop-color="#40a737" />
+                                    <stop offset="100%" stop-color="#5cb531" />
+                                </linearGradient>
+                                <linearGradient id="logosJcb2" x1="-62.802%" x2="253.671%" y1="49.858%" y2="49.858%">
+                                    <stop offset="0%" stop-color="#007940" />
+                                    <stop offset="22.85%" stop-color="#00873f" />
+                                    <stop offset="74.33%" stop-color="#40a737" />
+                                    <stop offset="100%" stop-color="#5cb531" />
+                                </linearGradient>
+                                <linearGradient id="logosJcb3" x1=".176%" x2="101.808%" y1="50.006%" y2="50.006%">
+                                    <stop offset="0%" stop-color="#1f286f" />
+                                    <stop offset="47.51%" stop-color="#004e94" />
+                                    <stop offset="82.61%" stop-color="#0066b1" />
+                                    <stop offset="100%" stop-color="#006fbc" />
+                                </linearGradient>
+                                <linearGradient id="logosJcb4" x1="-.576%" x2="98.133%" y1="49.914%" y2="49.914%">
+                                    <stop offset="0%" stop-color="#6c2c2f" />
+                                    <stop offset="17.35%" stop-color="#882730" />
+                                    <stop offset="57.31%" stop-color="#be1833" />
+                                    <stop offset="85.85%" stop-color="#dc0436" />
+                                    <stop offset="100%" stop-color="#e60039" />
+                                </linearGradient>
+                            </defs>
+                            <path fill="#fff"
+                                d="M256 157.418c0 21.907-17.839 39.746-39.746 39.746H0V39.746C0 17.839 17.839 0 39.746 0H256z" />
+                            <path fill="url(#logosJcb0)"
+                                d="M185.584 117.046h16.43c.47 0 1.565-.156 2.035-.156c3.13-.626 5.79-3.443 5.79-7.355c0-3.755-2.66-6.572-5.79-7.354c-.47-.157-1.408-.157-2.034-.157h-16.43z" />
+                            <path fill="url(#logosJcb1)"
+                                d="M200.137 13.3c-15.648 0-28.48 12.676-28.48 28.48v29.575h40.216c.939 0 2.034 0 2.816.156c9.076.47 15.805 5.164 15.805 13.3c0 6.416-4.538 11.893-12.988 12.989v.312c9.232.626 16.274 5.79 16.274 13.77c0 8.607-7.824 14.24-18.152 14.24h-44.127v57.898h41.78c15.648 0 28.48-12.675 28.48-28.48V13.3z" />
+                            <path fill="url(#logosJcb2)"
+                                d="M207.804 86.69c0-3.756-2.66-6.26-5.79-6.73c-.312 0-1.095-.156-1.564-.156h-14.866v13.77h14.866c.47 0 1.408 0 1.565-.156c3.13-.47 5.79-2.973 5.79-6.729" />
+                            <path fill="url(#logosJcb3)"
+                                d="M42.719 13.3c-15.648 0-28.48 12.676-28.48 28.48v70.26c7.981 3.911 16.274 6.415 24.568 6.415c9.858 0 15.178-5.946 15.178-14.083V71.198h24.411v33.017c0 12.831-7.98 23.316-35.051 23.316c-16.43 0-29.262-3.6-29.262-3.6v59.932h41.78c15.648 0 28.48-12.675 28.48-28.48V13.302z" />
+                            <path fill="url(#logosJcb4)"
+                                d="M121.428 13.3c-15.648 0-28.48 12.676-28.48 28.48v37.242c7.199-6.103 19.717-10.015 39.903-9.076c10.797.47 22.376 3.443 22.376 3.443v12.049c-5.79-2.973-12.674-5.634-21.594-6.26c-15.335-1.095-24.567 6.416-24.567 19.56c0 13.301 9.232 20.812 24.567 19.56c8.92-.626 15.805-3.442 21.594-6.259v12.049s-11.423 2.973-22.376 3.443c-20.186.938-32.704-2.974-39.902-9.076v65.721h41.78c15.648 0 28.479-12.675 28.479-28.48V13.302z" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="flex flex-auto gap-2">
+                    <span
+                        class="flex justify-center bg-white w-2/5 p-2 lg:py-4 text-5xl rounded-lg text-blue-600 drop-shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                            <path fill="currentColor"
+                                d="M5.255 12.959c.224.359.319.724.319 1.187c0 1.48-1.267 3.401-2.292 4.761H.949l-.948-5.625l2.052-.203l.495 4c.469-.745 1.041-1.933 1.041-2.745c0-.437-.083-.745-.203-1zm2.666 2.468c.371 0 1.333-.172 1.333-.708c0-.265-.187-.401-.4-.401c-.385 0-.881.469-.933 1.109m-.041 1.068c0 .667.36.932.855.932c.531 0 1.025-.135 1.692-.468l-.255 1.681c-.464.224-1.188.376-1.891.376c-1.776 0-2.417-1.068-2.417-2.428c0-1.749 1.043-3.604 3.177-3.604c1.172 0 1.839.656 1.839 1.579c0 1.464-1.907 1.932-3 1.943zm8.923-2.23c0 .229-.043.537-.068.751l-.615 3.891h-2l.563-3.573l.036-.401c0-.265-.156-.317-.344-.317c-.271 0-.536.12-.692.197l-.641 4.095h-2l.907-5.828h1.735l.025.468c.412-.265.959-.573 1.719-.573c1.011 0 1.376.532 1.376 1.308zm5.932-.65c.572-.401 1.104-.641 1.864-.641c1.016 0 1.375.532 1.375 1.308a4.817 4.817 0 0 1-.067.735l-.615 3.891h-2l.572-3.641l.032-.292c0-.291-.161-.359-.365-.359c-.239 0-.489.104-.667.197l-.635 4.095h-2l.573-3.652l.025-.281c0-.291-.161-.359-.359-.359c-.272 0-.521.12-.699.197l-.625 4.084h-2.009l.916-5.817h1.708l.068.484c.401-.297.932-.589 1.651-.589c.641 0 1.043.267 1.256.641zm7.213 1.692c0-.468-.12-.801-.469-.801c-.796 0-.957 1.401-.957 2.109c0 .547.145.88.505.88c.744 0 .921-1.468.921-2.188m-3.469 1.224c0-1.837.991-3.557 3.215-3.557c1.692 0 2.307 1 2.307 2.376c0 1.812-.959 3.692-3.255 3.692c-1.693 0-2.267-1.109-2.267-2.511" />
+                        </svg>
+                    </span>
+                    <span
+                        class="flex justify-center bg-white w-3/5 p-2 lg:py-4 text-5xl rounded-lg text-center drop-shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="0.85em" height="1em" viewBox="0 0 256 302">
+                            <path fill="#27346a"
+                                d="M217.168 23.507C203.234 7.625 178.046.816 145.823.816h-93.52A13.393 13.393 0 0 0 39.076 12.11L.136 259.077c-.774 4.87 2.997 9.28 7.933 9.28h57.736l14.5-91.971l-.45 2.88c1.033-6.501 6.593-11.296 13.177-11.296h27.436c53.898 0 96.101-21.892 108.429-85.221c.366-1.873.683-3.696.957-5.477c-1.556-.824-1.556-.824 0 0c3.671-23.407-.025-39.34-12.686-53.765" />
+                            <path fill="#27346a"
+                                d="M102.397 68.84a11.737 11.737 0 0 1 5.053-1.14h73.318c8.682 0 16.78.565 24.18 1.756a101.6 101.6 0 0 1 6.177 1.182a89.928 89.928 0 0 1 8.59 2.347c3.638 1.215 7.026 2.63 10.14 4.287c3.67-23.416-.026-39.34-12.687-53.765C203.226 7.625 178.046.816 145.823.816H52.295C45.71.816 40.108 5.61 39.076 12.11L.136 259.068c-.774 4.878 2.997 9.282 7.925 9.282h57.744L95.888 77.58a11.717 11.717 0 0 1 6.509-8.74" />
+                            <path fill="#2790c3"
+                                d="M228.897 82.749c-12.328 63.32-54.53 85.221-108.429 85.221H93.024c-6.584 0-12.145 4.795-13.168 11.296L61.817 293.621c-.674 4.262 2.622 8.124 6.934 8.124h48.67a11.71 11.71 0 0 0 11.563-9.88l.474-2.48l9.173-58.136l.591-3.213a11.71 11.71 0 0 1 11.562-9.88h7.284c47.147 0 84.064-19.154 94.852-74.55c4.503-23.15 2.173-42.478-9.739-56.054c-3.613-4.112-8.1-7.508-13.327-10.28c-.283 1.79-.59 3.604-.957 5.477" />
+                            <path fill="#1f264f"
+                                d="M216.952 72.128a89.928 89.928 0 0 0-5.818-1.49a109.904 109.904 0 0 0-6.177-1.174c-7.408-1.199-15.5-1.765-24.19-1.765h-73.309a11.57 11.57 0 0 0-5.053 1.149a11.683 11.683 0 0 0-6.51 8.74l-15.582 98.798l-.45 2.88c1.025-6.501 6.585-11.296 13.17-11.296h27.444c53.898 0 96.1-21.892 108.428-85.221c.367-1.873.675-3.688.958-5.477c-3.122-1.648-6.501-3.072-10.14-4.279a83.26 83.26 0 0 0-2.77-.865" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="md:flex md:gap-4 font-plusjs pt-4">
+            <div class="md:flex-auto md:w-1/3 bg-slate-50 border-slate-200 border-2 rounded-xl p-2 lg:p-4 mb-2 md:mb-0">
+                <div class="flex gap-2 sm:gap-4">
+                    <div class="bg-white p-2 rounded-md drop-shadow-md text-blue-500 shrink-0 h-fit text-xl md:text-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5">
+                                <path d="M12 11.543A2.17 2.17 0 1 0 12 7.2a2.17 2.17 0 0 0 0 4.342m0 .001v3.256" />
+                                <path
+                                    d="M20.672 11.89V6.61a1.928 1.928 0 0 0-1.32-1.831L14.438 3.14a7.805 7.805 0 0 0-4.876 0L4.648 4.778a1.927 1.927 0 0 0-1.32 1.83v5.28a7.709 7.709 0 0 0 3.603 6.524l4.048 2.544a1.927 1.927 0 0 0 2.042 0l4.047-2.544a7.708 7.708 0 0 0 3.604-6.523" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="flex-row">
+                        <h2 class="sm:text-lg md:text-xl lg:text-2xl font-semibold mb-1">Data Security</h2>
+                        <h3 class="text-sm text-slate-500 mb-4 lg:mb-8 h-full">Time is valuable, and your needs
+                            are
+                            unique.
+                            That's why we've curated a subscription.
+                        </h3>
+                    </div>
+                </div>
+                <div class="bg-white p-2 rounded-md mb-2 shadow-sm">
+                    <div class="flex flex-auto gap-2 sm:gap-4">
+                        <div class="bg-blue-50 rounded-md h-fit p-1">
+                            <span class="text-md text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                                    <path fill="currentColor"
+                                        d="M10.06 17.88A4.25 4.25 0 0 0 11 18a4 4 0 0 0 2.23-.68l3.22 2.87a3.88 3.88 0 0 0-.2 3.17A4 4 0 1 0 22.62 19l2.54-5.09a3.78 3.78 0 0 0 2.91-.53a4 4 0 1 0-4.69-.38l-2.54 5.09A3.86 3.86 0 0 0 20 18a4 4 0 0 0-2.23.68l-3.22-2.87a3.88 3.88 0 0 0 .2-3.17a4 4 0 1 0-6.45 4.29L4 25V2H2v26a2 2 0 0 0 2 2h26v-2H4.67ZM26 8a2 2 0 1 1-2 2a2 2 0 0 1 2-2m-4 14a2 2 0 1 1-2-2a2 2 0 0 1 2 2M11 12a2 2 0 1 1-2 2a2 2 0 0 1 2-2" />
+                                </svg>
+                            </span>
+                        </div>
+                        <h2 class="text-sm md:text-base font-semibold">Robust Data Encryption</h2>
+                    </div>
+                    <h4 class="text-xs text-slate-400 mt-3">Your data is shielded by cutting-edge encryption
+                        protocols.</h4>
+                </div>
+                <div class="bg-white p-2 rounded-md mb-2 shadow-sm">
+                    <div class="flex flex-auto gap-2 sm:gap-4">
+                        <div class="bg-blue-50 rounded-md h-fit p-1">
+                            <span class="text-md text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                                    <path fill="currentColor"
+                                        d="M188 48a27.75 27.75 0 0 0-12 2.71V44a28 28 0 0 0-54.65-8.6A28 28 0 0 0 80 60v64l-3.82-6.13a28 28 0 0 0-48.6 27.82c16 33.77 28.93 57.72 43.72 72.69C86.24 233.54 103.2 240 128 240a88.1 88.1 0 0 0 88-88V76a28 28 0 0 0-28-28m12 104a72.08 72.08 0 0 1-72 72c-20.38 0-33.51-4.88-45.33-16.85C69.44 193.74 57.26 171 41.9 138.58a6.36 6.36 0 0 0-.3-.58a12 12 0 0 1 20.79-12a1.76 1.76 0 0 0 .14.23l18.67 30A8 8 0 0 0 96 152V60a12 12 0 0 1 24 0v60a8 8 0 0 0 16 0V44a12 12 0 0 1 24 0v76a8 8 0 0 0 16 0V76a12 12 0 0 1 24 0Z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <h2 class="text-sm md:text-base font-semibold">Strict Access Controls</h2>
+                    </div>
+                    <h4 class="text-xs text-slate-400 mt-3">Access to your data is strictly controlled and
+                        granted
+                        only to authorized personnel.
+                        Our robust access controls monitors ensure that your information is accessible only to
+                        individuals.
+                    </h4>
+                </div>
+                <div class="bg-white p-2 rounded-md shadow-sm">
+                    <div class="flex flex-auto gap-2 sm:gap-4">
+                        <div class="bg-blue-50 rounded-md h-fit p-1">
+                            <span class="text-md text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M12 21a2 2 0 1 0 0-4a2 2 0 0 0 0 4m1-5.874A4.002 4.002 0 0 1 12 23a4 4 0 0 1-1-7.874V13H7a3 3 0 0 1-3-3V8.874A4.002 4.002 0 0 1 5 1a4 4 0 0 1 1 7.874V10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8.874A4.002 4.002 0 0 1 19 1a4 4 0 0 1 1 7.874V10a3 3 0 0 1-3 3h-4zM4.997 7h.006a2 2 0 1 0-.006 0M19 7a2 2 0 1 0 0-4a2 2 0 0 0 0 4" />
+                                </svg>
+                            </span>
+                        </div>
+                        <h2 class="text-sm md:text-base font-semibold">Data Protection Regulations</h2>
+                    </div>
+                    <h4 class="text-xs text-slate-400 mt-3">Foster a positive and collaborative team culture by
+                        promoting open communication and mutual respect.</h4>
+                </div>
+            </div>
+            <div
+                class="md:flex md:flex-col md:w-2/3 bg-slate-50 border-slate-200 border-2 rounded-xl p-2 lg:p-4 mb-2 md:mb-0">
+                <div class="flex gap-2 sm:gap-4">
+                    <div class="bg-white p-2 rounded-md drop-shadow-md text-blue-500 shrink-0 h-fit text-lg md:text-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <path d="M11 5h10m-10 7h10m-10 7h10" />
+                                <circle cx="5" cy="5" r="2" />
+                                <circle cx="5" cy="5" r="2" />
+                                <circle cx="5" cy="12" r="2" />
+                                <circle cx="5" cy="19" r="2" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="flex-col">
+                        <h2 class="sm:text-lg md:text-xl lg:text-2xl font-semibold mb-1">Comprehensive Property
+                            Listings</h2>
+                        <h3 class="text-sm text-slate-500 mb-4">We pride ourselves on offering an extensive and
+                            diverse range of property listings to cater to every unique.</h3>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg p-2 w-full flex flex-auto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15090.881503512053!2d106.81067424308442!3d-6.227007987175553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1709800897923!5m2!1sid!2sid"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full min-h-64"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of section-->
+    <!-- Testimonial section-->
+    <section class="mb-14">
+        <div class="container mx-auto md:mt-14 px-6 sm:px-7 lg:px-10">
+            <div class="font-plusjs">
+                <h1 class="mt-2 md:mt-6 text-center tracking-tighter font-semibold text-2xl md:text-3xl lg:text-5xl">
+                    Hear From the Client Around the World</h1>
+                <h3 class="md:mt-4 text-center text-slate-500 text-sm md:text-base mt-3 mb-8 md:mb-10 lg:mb-14">
+                    Explore the
+                    firsthand experience of individuals who have entrusted us with their real estate journeys.</h3>
+            </div>
+        </div>
+        <div class="flex gap-2 pt-4 flex-nowrap overflow-hidden" id="testi">
+            <div class="flex gap-2 justify-center font-plusjs animate-slide" id="slider">
+                <div
+                    class="flex flex-col justify-beetwen p-5 bg-slate-200 rounded-xl min-w-64 w-72 sm:min-w-80 h-80 transition ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                    <div class="h-full">
+                        <span class="text-5xl text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+                            </svg>
+                        </span>
+                        <h2 class="text-xl font-medium tracking-tighter">Headspaces provides me with ... a connection to
+                            myself, and a
+                            disconnection from negative thoughts, feelings, and sensations.
+                        </h2>
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm  mt-2">Kerl, UK</h3>
+                        <h4 class="text-[10px] font-medium">on finding her happy place</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-beetwen p-5 bg-slate-200 rounded-xl min-w-64 w-72 sm:min-w-80 h-80 transition ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                    <div class="h-full">
+                        <span class="text-5xl text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+                            </svg>
+                        </span>
+                        <h2 class="text-xl font-medium tracking-tighter">Your apps bring so much peace and tolerance to
+                            our home.
+                        </h2>
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm  mt-2">Rachael, UK</h3>
+                        <h4 class="text-[10px] font-medium">on meditation's positive effect on family life</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-beetwen p-5 bg-slate-200 rounded-xl min-w-64 w-72 sm:min-w-80 h-80 transition ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                    <div class="h-full">
+                        <span class="text-5xl text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+                            </svg>
+                        </span>
+                        <h2 class="text-xl font-medium tracking-tighter">I came to learn that the storyline in my head
+                            ... was holding me
+                            back.
+                        </h2>
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm  mt-2">Peter, Belgium</h3>
+                        <h4 class="text-[10px] font-medium">on what he learn when sitting with himself</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-beetwen p-5 bg-slate-200 rounded-xl min-w-64 w-72 sm:min-w-80 h-80 transition ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                    <div class="h-full">
+                        <span class="text-5xl text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+                            </svg>
+                        </span>
+                        <h2 class="text-xl font-medium tracking-tighter">Headspaces provides me with ... a connection to
+                            myself, and a
+                            disconnection from negative thoughts, feelings, and sensations.
+                        </h2>
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm  mt-2">Kerl, UK</h3>
+                        <h4 class="text-[10px] font-medium">on finding her happy place</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-beetwen p-5 bg-slate-200 rounded-xl min-w-64 w-72 sm:min-w-80 h-80 transition ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                    <div class="h-full">
+                        <span class="text-5xl text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+                            </svg>
+                        </span>
+                        <h2 class="text-xl font-medium tracking-tighter">Your apps bring so much peace and tolerance to
+                            our home.
+                        </h2>
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm  mt-2">Rachael, UK</h3>
+                        <h4 class="text-[10px] font-medium">on meditation's positive effect on family life</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 justify-center font-plusjs animate-slide" id="slider">
+                <div
+                    class="flex flex-col justify-beetwen p-5 bg-slate-200 rounded-xl min-w-64 w-72 sm:min-w-80 h-80 transition ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                    <div class="h-full">
+                        <span class="text-5xl text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+                            </svg>
+                        </span>
+                        <h2 class="text-xl font-medium tracking-tighter">Headspaces provides me with ... a connection to
+                            myself, and a
+                            disconnection from negative thoughts, feelings, and sensations.
+                        </h2>
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm  mt-2">Kerl, UK</h3>
+                        <h4 class="text-[10px] font-medium">on finding her happy place</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-beetwen p-5 bg-slate-200 rounded-xl min-w-64 w-72 sm:min-w-80 h-80 transition ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                    <div class="h-full">
+                        <span class="text-5xl text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+                            </svg>
+                        </span>
+                        <h2 class="text-xl font-medium tracking-tighter">Your apps bring so much peace and tolerance to
+                            our home.
+                        </h2>
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm  mt-2">Rachael, UK</h3>
+                        <h4 class="text-[10px] font-medium">on meditation's positive effect on family life</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-beetwen p-5 bg-slate-200 rounded-xl min-w-64 w-72 sm:min-w-80 h-80 transition ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                    <div class="h-full">
+                        <span class="text-5xl text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+                            </svg>
+                        </span>
+                        <h2 class="text-xl font-medium tracking-tighter">I came to learn that the storyline in my head
+                            ... was holding me
+                            back.
+                        </h2>
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm  mt-2">Peter, Belgium</h3>
+                        <h4 class="text-[10px] font-medium">on what he learn when sitting with himself</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-beetwen p-5 bg-slate-200 rounded-xl min-w-64 w-72 sm:min-w-80 h-80 transition ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                    <div class="h-full">
+                        <span class="text-5xl text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+                            </svg>
+                        </span>
+                        <h2 class="text-xl font-medium tracking-tighter">Headspaces provides me with ... a connection to
+                            myself, and a
+                            disconnection from negative thoughts, feelings, and sensations.
+                        </h2>
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm  mt-2">Kerl, UK</h3>
+                        <h4 class="text-[10px] font-medium">on finding her happy place</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-beetwen p-5 bg-slate-200 rounded-xl min-w-64 w-72 sm:min-w-80 h-80 transition ease-in-out hover:-translate-y-2 hover:shadow-lg">
+                    <div class="h-full">
+                        <span class="text-5xl text-slate-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+                            </svg>
+                        </span>
+                        <h2 class="text-xl font-medium tracking-tighter">Your apps bring so much peace and tolerance to
+                            our home.
+                        </h2>
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm  mt-2">Rachael, UK</h3>
+                        <h4 class="text-[10px] font-medium">on meditation's positive effect on family life</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of section-->
+    <section>
+        <div class="bg-blue-600 mx-auto md:mt-6 px-6 sm:px-7 lg:px-10">
+            <div class="font-plusjs text-center pt-6 pb-6 sm:pt-14 sm:pb-10">
+                <h1
+                    class="text-center tracking-tighter font-semibold text-white text-2xl sm:text-3xl md:text-4xl lg:text-6xl md:px-24 lg:px-40 xl:px-64 lg:leading-tight">
+                    Personalized Services, Globally Recognized</h1>
+                <h3
+                    class="md:mt-4 text-center text-slate-300 text-sm md:text-base mt-3 mb-3 md:mb-5 md:px-16 lg:px-52 xl:px-80">
+                    Whether buying, selling, or investing, our clients appreciate the tailored approach that
+                    transcends
+                    geographical boundaries.</h3>
+                <button
+                    class="text-xs font-medium bg-white text-blue-600 rounded-full shadow-md px-6 py-3 transition ease-in-out hover:translate-y-1 hover:shadow-blue-300 hover:shadow-md">Learn
+                    More</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer class="container mx-auto md:mt-6 px-6 sm:px-7 lg:px-10 font-plusjs">
+    <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="w-fit md:max-w-72 pt-4">
+            <h2 class="text-sm sm:text-base font-bold tracking-tight">Blossoming Dreams, Rooted in Trust:<br>Orchard
+                Park, Where Your
+                Real Estate Journey Flourishes.</h2>
+        </div>
+        <div class="flex flex-wrap gap-3 sm:flex-nowrap pt-4 sm:justify-between">
+            <div class="w-full sm:w-fit pt-2 md:pt-0">
+                <h2 class="text-sm font-extrabold tracking-tight">COMPANY</h2>
+                <ul class="text-xs font-semibold mt-2">
+                    <li class="mb-2 transition ease-in-out hover:text-blue-600"><a href="#">Blog</a></li>
+                    <li class="mb-2 hover:text-blue-600"><a href="#">Careers</a></li>
+                    <li class="mb-2 hover:text-blue-600"><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="w-full sm:w-fit pt-2 md:pt-0">
+                <h2 class="text-sm font-extrabold tracking-tight">RESOURCES</h2>
+                <ul class="text-xs font-semibold mt-2">
+                    <li class="mb-2 hover:text-blue-600"><a href="#">Documentation</a></li>
+                    <li class="mb-2 hover:text-blue-600"><a href="#">Papers</a></li>
+                    <li class="mb-2 hover:text-blue-600"><a href="#">Press Conferences</a></li>
+                </ul>
+            </div>
+            <div class="w-full sm:w-fit pt-2 md:pt-0">
+                <h2 class="text-sm font-extrabold tracking-tight">LEGAL</h2>
+                <ul class="text-xs font-semibold mt-2">
+                    <li class="mb-2 hover:text-blue-600"><a href="#">Terms of Service</a></li>
+                    <li class="mb-2 hover:text-blue-600"><a href="#">Privacy Policy</a></li>
+                    <li class="mb-2 hover:text-blue-600"><a href="#">Cookies Policy</a></li>
+                    <li class="mb-2 hover:text-blue-600"><a href="#">Data Processing</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mt-8 w-full border-t-2 border-slate-500"></div>
+    <div class="flex flex-wrap my-4 font-plusjs text-slate-700 justify-between">
+        <h3 class="text-xs font-semibold tracking-tighter pt-2">&copy; 2024 OrchardPark Group</h3>
+        <div class="flex gap-4 font-plusjs text-slate-700 pt-2">
+            <a href="#" class="text-xs font-semibold hover:text-blue-600">Terms of Services</a>
+            <a href="#" class="text-xs font-semibold hover:text-blue-600">Privacy Policy</a>
+            <a href="#" class="text-xs font-semibold hover:text-blue-600">Cookies</a>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</footer>
+
+</html>
